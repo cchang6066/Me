@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var alert1 = false
+    @State var alert2 = false
     var body: some View {
         VStack {
            Text("ALL ABOUT ME")
@@ -21,6 +23,7 @@ struct ContentView: View {
            Text("2 Truth and a Lie")
                 .font(.title)
                 .foregroundColor(.red)
+                
             Text("\n\n")
                 
            Text("1. MY FAVORITE SPORTS IS TENNIS")
