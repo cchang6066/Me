@@ -12,7 +12,7 @@ struct ContentView: View {
     @State var alert2 = false
     var body: some View {
         VStack {
-            Text("TEST")
+            
            Text("ALL ABOUT ME")
                 .font(.largeTitle)
                 .fontWeight(.bold)
