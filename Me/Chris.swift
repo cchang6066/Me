@@ -22,6 +22,7 @@ struct Chris: View {
             Text("I do Cross county")
                 .font(Font.custom("Helvetica", fixedSize: 18))
                 .frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .top)
+            Text("")
         }
     }
 }
