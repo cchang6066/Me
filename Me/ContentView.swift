@@ -8,40 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var alert1 = false
-    @State var alert2 = false
+
     var body: some View {
         VStack {
-            
-           Text("ALL ABOUT ME")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(.blue)
-            Text("")
-           Text("Christopher")
-                .font(.title)
-            Text("")
-           Text("2 Truth and a Lie")
-                .font(.title)
-                .foregroundColor(.red)
-                
-            Text("\n\n")
-                
-           Text("1. MY FAVORITE SPORTS IS TENNIS")
-//                .font(.title)
-            Text("")
-           Text("2. I HAVE DRIVER LICENSE")
-//                .font(.title)
-            Text("")
-           Text("3. I HAVE SISTER WHO GO TO PHS")
-//                .font(.title)
-            
-            
+            NavigationStack{
+                NavigationLink("Chris", destination: File())
+                    .foregroundColor(.black)                     .frame(width: 300, height:200)                     .background(.blue)                     .opacity(0.8)
+                NavigationLink("Christopher", destination: Christopher())
+                    .foregroundColor(.black)
+                    .frame(width: 300, height:200)       .frame(width: 300, height:200)                     .background(.red)                     .opacity(0.8)
+            }
         }
-        .padding()
     }
 }
-
 #Preview {
     ContentView()
 }
+//NavigationStack {                 NavigationLink("Christopher", destination: Christopher())                     .foregroundColor(.black)                     .frame(width: 300, height:200)                     .background(.blue)                     .opacity(0.8)                             NavigationLink("Chris", destination: File())                     .foregroundColor(.black)                     .frame(width: 300, height:200)                     .frame(width: 300, height:200)                     .background(.red)                     .opacity(0.8)
