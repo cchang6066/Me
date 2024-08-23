@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct File: View {
+struct Chris: View {
     
     var body: some View {
         VStack {
@@ -17,10 +17,11 @@ struct File: View {
             Text("**Chris Chiramel**")
                 .font(Font.headline)
             Text("*Junior Year*")
-                .frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .top)
                 .foregroundColor(.red)
+                .background(Rectangle().stroke())
             Text("I do Cross county")
-                .font(Font.custom("Helvetica", fixedSize: 20))
+                .font(Font.custom("Helvetica", fixedSize: 18))
+                .frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .top)
         }
     }
 }
