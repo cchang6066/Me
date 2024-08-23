@@ -12,17 +12,21 @@ struct Chris: View {
     var body: some View {
         VStack {
             Text("***All About***")
-                .font(Font.largeTitle)
                 .foregroundColor(.blue)
+                .background(Rectangle().stroke())
+                .font(Font.custom("Helvetica", fixedSize: 50))
             Text("**Chris Chiramel**")
-                .font(Font.headline)
+                .font(Font.custom("Helvetica", fixedSize: 40))
             Text("*Junior Year*")
                 .foregroundColor(.red)
                 .background(Rectangle().stroke())
-            Text("I do Cross county")
-                .font(Font.custom("Helvetica", fixedSize: 18))
-                .frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .top)
-            Text("")
+                .font(Font.custom("Helvetica", fixedSize: 30))
+            Text("1. I do Cross county \n")
+                .font(Font.custom("Helvetica", fixedSize: 24))
+            Text("2. I have 5 siblings \n")
+            .font(Font.custom("Helvetica", fixedSize: 24))
+            Text("3. I don't have any sisters")
+                .font(Font.custom("Helvetica", fixedSize: 24))
         }
     }
 }
